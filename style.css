@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    font-style: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0fc3ff;
+}
+
+.navbar {
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 5rem;
+    padding: 1rem 2rem;
+
+
+    .paypal-logo {
+        width: 4rem;
+    }
+
+    .nav-menus {
+        align-items: center;
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        margin-left: 1.5rem;
+
+        li {
+            align-content: center;;
+        }
+        li a {
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+            font-style: Helvetica-Neue;
+            font-weight: 500;
+        }
+    }
+
+    .nav-buttons {
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+        margin-left: auto;
+
+
+        .login-btn,
+        .signup-btn {
+            border: 0.2rem solid black;
+            border-radius: 2rem;
+            cursor: pointer;
+            font-weight: bold;
+            height: 2.5rem;
+            width: 7rem;
+
+            &:hover {
+                scale: 1.2;
+            }
+        }
+
+        .login-btn {
+            background-color: #fff;
+            color: black;
+        }
+
+        .signup-btn {
+            background-color: #000;
+            color: #fff;
+
+            &:hover {
+                background-color: #0fc3ff;
+                color: black;
+            }
+        }
+    }
+    .help-link {
+        align-content: center;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.main {
+    background-color: #0fc3ff;
+    color: #fff;
+    height: 100%;
+    margin-top: 1rem;
+    text-align: center;
+
+    .main-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .content {
+        text-align: center;
+
+        .content-title {
+            color: black;
+            font-size: 4rem;
+            height: initial;
+            margin-bottom: 2rem;
+        }
+    
+        .image-container {
+            background-image: url('./paypal-image.jpg');
+            background-size: cover;
+            height: 35rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30rem;
+        }
+    }    
+}
+
+.toggle-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 2rem;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1rem 2rem;
+
+    &:active {
+        background-color: #000;
+        color: #fff;
+    }
+}
